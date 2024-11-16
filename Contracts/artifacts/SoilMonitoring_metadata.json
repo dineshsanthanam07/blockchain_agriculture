@@ -1,0 +1,186 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "farmer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "pH",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "moisture",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "temperature",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "nutrients",
+						"type": "uint256"
+					}
+				],
+				"name": "SoilDataUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "farmer",
+						"type": "address"
+					}
+				],
+				"name": "getSoilData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "pH",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "moisture",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "temperature",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "nutrients",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SoilMonitoring.SoilData",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "soilRecords",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "pH",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "moisture",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "temperature",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nutrients",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_pH",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_moisture",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_temperature",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_nutrients",
+						"type": "uint256"
+					}
+				],
+				"name": "updateSoilData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/SoilMonitoring.sol": "SoilMonitoring"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/SoilMonitoring.sol": {
+			"keccak256": "0x79690424f76d2bb18e295f465d3c58eef4c05b8568e446000de69b436ed9ac32",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a6f3177883ad087af171df6398cb3895696fa34eb6f4e276d080e11200ffa735",
+				"dweb:/ipfs/QmYxtYVJhrAQNgFNnJUfrkn8D7sgUasyMc4AQgJy1uirDM"
+			]
+		}
+	},
+	"version": 1
+}
